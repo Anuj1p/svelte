@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "vite --port 3001",
+		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -27,6 +27,5 @@
 	"dependencies": {
 		"@sveltejs/adapter-vercel": "^5.3.1",
 		"@tanstack/svelte-query": "^5.40.1",
-		"classnames": "^2.5.1"
 	}
 }
