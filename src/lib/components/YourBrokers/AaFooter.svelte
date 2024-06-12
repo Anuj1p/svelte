@@ -18,4 +18,5 @@
     {footer.text}
   </Text>
 </div>
-<!-- // "dev": "vite --port 3001", -->
+<!-- "dev": "vite --port 3001", -->
+<!-- "dev": "vite dev", -->
