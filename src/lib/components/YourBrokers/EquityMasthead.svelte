@@ -14,7 +14,7 @@
 
   const onBackClick = () => {
     console.log("onBackClick")
-    const navlink = 'indmoney://webview?url=https://webview.indmoney.com/account-aggregator/onboarding/select-your-bank'
+    const navlink = 'indmoney://webview?url=https%3A%2F%2Fwebview.indmoney.com%2Faccount-aggregator%2Fonboarding%2Fselect-your-bank%2Fclient'
     // goto(navlink)
     window.location.href = navlink
   }
