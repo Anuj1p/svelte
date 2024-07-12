@@ -12,13 +12,20 @@
   export let hideNav: boolean;
   export let connectOtherBrokers: IConnectOtherAccounts;
 
+  const onBackClick = () => {
+    console.log("onBackClick")
+    const navlink = 'indmoney://webview?url=https://webview.indmoney.com/account-aggregator/onboarding/select-your-bank'
+    // goto(navlink)
+    window.location.href = navlink
+  }
+
 </script>
 
 <div class="bg-brand-blue-dark">
   <div class="flex-col pt-5">
     {#if !hideNav}
       <div class="flex items-center justify-between w-full mb-6 px-4">
-        <div class="flex items-center cursor-pointer">
+        <div class="flex items-center cursor-pointer" on:click={onBackClick}>
           <CustomCdnImage
             src="https://indcdn.indmoney.com/cdn/images/fe/back-grey-icon.png"
             width={24}
